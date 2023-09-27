@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 10:45:34 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo0MTozNiDDllM7MzIyNA=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo0NTozNCDDllM7MTszMzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="ortalama" expression="0"/>
+            <output expression="&quot;Vize Sonuunuz : &quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final Sonucunuz : &quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="0.3*vize+0.7*final/2"/>
+            <output expression="&quot;Vize Sonucunuz : &quot;&amp; vize &amp;  &quot;Final Sonucunuz : &quot; &amp;final &amp; &quot;Ortalaman&#305;z : &quot;  &amp; ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

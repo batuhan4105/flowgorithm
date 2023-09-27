@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 10:32:53 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDoyNDozNiDDllM7MzIyNQ=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDozMjo1MyDDllM7MTszMzMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac" type="Integer" array="False" size=""/>
+            <declare name="isim" type="String" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="&quot;Bir metin giriniz.&quot;" newline="True"/>
+            <input variable="isim"/>
+            <output expression="&quot;Metni ka&#231; defa yazd&#305;rmak istedi&#287;inizi giriniz (say&#305;larla) :&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="0&#13;&#10;" end="sayi" direction="inc" step="1">
+                <if expression="sayac&lt;sayi">
+                    <then>
+                        <output expression="isim" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

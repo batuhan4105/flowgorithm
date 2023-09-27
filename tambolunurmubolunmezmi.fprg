@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 10:38:12 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDozMzozOSDDllM7MzIyOA=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDozODoxMiDDllM7MTszMzMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <assign variable="sonuc" expression="0"/>
+            <output expression="&quot;1.Say&#305;&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;2.Say&#305;&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1%sayi2==0">
+                <then>
+                    <assign variable="sonuc" expression="sayi1/sayi2"/>
+                    <output expression="&quot;Tam B&#246;l&#252;n&#252;r:&quot;&amp;sonuc" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="sonuc" expression="sayi1/sayi2"/>
+                    <output expression="&quot;Tam B&#246;l&#252;nmez:&quot;&amp;sonuc" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

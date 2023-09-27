@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 10:49:50 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo0NTozNyDDllM7MzIyOQ=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo0OTo1MCDDllM7MTszMzM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <assign variable="sonuc" expression="1"/>
+            <output expression="&quot;Fakt&#246;riyel hesaplama i&#231;in bir say&#305; giriniz : &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;0">
+                <output expression="&quot;L&#252;tfen pozitif bir de&#287;er giriniz.&quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <for variable="sayac" start="1" end="sayi" direction="inc" step="1">
+                <assign variable="sonuc" expression="sayac*sonuc"/>
+            </for>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

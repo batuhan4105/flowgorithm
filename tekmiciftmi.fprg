@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 10:52:01 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo0OTo1MiDDllM7MzIzMA=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo1MjowMSDDllM7MTszMzI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen Bir Say&#305; Girin:&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi % 2 == 0">
+                <then>
+                    <output expression="&quot;Girilen Say&#305; &#199;ift:&quot; &amp; sayi" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Girilen Say&#305; Tek:&quot; &amp; sayi" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Batuhan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-27 11:10:49 &#214;S"/>
+        <attribute name="created" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMDo1OTo1NiDDllM7MzIzNQ=="/>
+        <attribute name="edited" value="QmF0dWhhbjtERVNLVE9QLUhGOElIUVY7MjAyMy0wOS0yNzsxMToxMDo0OSDDllM7MTszMzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="1"/>
+            <output expression="&quot;Pozitif bir say&#305; giriniz : &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;0">
+                <output expression="&quot;L&#252;tfen Pozitif Bir De&#287;er Giriniz!! :&quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <for variable="sayac" start="1" end="sayi" direction="inc" step="1">
+                <if expression="sayi%sayac==0">
+                    <then>
+                        <output expression="sayac" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
